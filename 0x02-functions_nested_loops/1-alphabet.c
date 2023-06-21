@@ -2,10 +2,10 @@
 
 /**
  * print_alphabet-print alphabet in lower case
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 
-void print_alphabet(void)
+int print_alphabet(void)
 {
 char c = 'a';
 
