@@ -1,9 +1,8 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- * print_alphabet-Entry point
- * Return:0
+ * print_alphabet-print alphabet in lower case
+ * Return: 0 (success)
  */
 
 void print_alphabet(void)
@@ -14,6 +13,7 @@ while (c < = 'z')
 {
 _putchar(c);
 c++;
+
 }
 _putchar('\n');
 }
