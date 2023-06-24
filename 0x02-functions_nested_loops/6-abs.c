@@ -6,12 +6,11 @@
  * Return: absolute value of the integer
  */
 
-int _abs(int c)
+int _abs(int i)
 {
-if (c < 0)
+if (i < 0)
 {
-c = c * -1;
-return (abs_val);
+i = i * -1;
 }
-return (c);
+return (i);
 }
