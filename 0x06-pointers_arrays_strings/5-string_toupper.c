@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * string_toupper - changes lowercase letters to uppercase.
@@ -13,8 +13,10 @@ i = 0;
 while (c[i] != '\0')
 {
 if (c[i] >= 'a' && c[i] <= 'z')
+{
 c[i] -= 'a' - 'A';
+}
 i++;
 }
-return (c);
+return (str);
 }
