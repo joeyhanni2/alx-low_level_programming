@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * cap_string - capitalizes all words of a string
  * @str: string to capitalize
@@ -8,27 +8,28 @@
 
 char *cap_string(char *str)
 {
-int index = 0;
-while (str[index])
+int capitalize_next = 1;
+char *ptr = str;
+
+while (*ptr)
 {
-while (!(str[index] >= 'a' && str[index] <= 'z'
-index++;
-if (str[index - 1] == ' ' ||
-str[index - 1] == '\t' ||
-str[index - 1] == '\n' ||
-str[index - 1] == ',' ||
-str[index - 1] == ';' ||
-str[index - 1] == '.' ||
-str[index - 1] == '!' ||
-str[index - 1] == '?' ||
-str[index - 1] == '"' ||
-str[index - 1] == '(' ||
-str[index - 1] == ')' ||
-str[index - 1] == '{' ||
-str[index - 1] == '}' ||
-index == 0)
-str[index] -= 32;
-index++;
+if (isspace(*ptr) || *ptr == ',' || *ptr == ';' ||
+*ptr == '.' || *ptr == '!' || *ptr == '?' ||
+*ptr == '"' || *ptr == '(' || *ptr == ')'
+*ptr == '{' || *ptr == '}');
+{
+capitalize_next = 1;
 }
-return (str);
+else
+{
+if (capitalize_next)
+{
+*ptr = toupper(*ptr);
+capitalize_next = 0;
+}
+}
+ptr++;
+}
+
+return (str)
 }
