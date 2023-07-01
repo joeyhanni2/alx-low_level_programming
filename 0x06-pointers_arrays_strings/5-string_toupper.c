@@ -6,7 +6,7 @@
  * Return: the changed string.
  */
 
-char *string_toupper(char *c);
+char *string_toupper(char *str);
 {
 char *ptr = str;
 
