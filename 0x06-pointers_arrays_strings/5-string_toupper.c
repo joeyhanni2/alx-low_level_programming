@@ -8,15 +8,15 @@
 
 char *string_toupper(char *str);
 {
-char *ptr = str;
+int i = 0;
 
-while (*ptr)
+while (str[i] != '\0')
 {
-if (*ptr >= 'a' && *ptr <= 'z')
+if (str[i] >= 'a' && str[i] <= 'z')
 {
-*ptr = *ptr - 'a' + 'A';
+str[i] = str[i] - 'a' + 'A';
 }
-ptr++;
+str[i]++;
 }
 return (str);
 }
