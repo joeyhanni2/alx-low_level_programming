@@ -5,18 +5,18 @@
  * @c: the string to change
  * Return: the changed string.
  */
+
 char *string_toupper(char *c);
 {
-int i;
+char *ptr = str;
 
-i = 0;
-while (c[i] != '\0')
+while (*ptr)
 {
-if (c[i] >= 'a' && c[i] <= 'z')
+if (*ptr >= 'a' && *ptr <= 'z')
 {
-c[i] -= 'a' - 'A';
+*ptr = *ptr - 'a' + 'A';
 }
-i++;
+ptr++;
 }
 return (str);
 }
