@@ -14,7 +14,7 @@ int i;
 
 for (i = 0; s[i] >= '\0'; i++)
 {
-else if (s[i] == c)
+if (s[i] == c)
 return (s + i);
 }
 return (null);
