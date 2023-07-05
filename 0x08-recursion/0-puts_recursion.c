@@ -3,10 +3,10 @@
 /**
  * _puts_recursion - prints a string followed by new line
  *  @s: string to print
- *  Return: nothing
+ *  Return: 0 Always (success)
  */
 
-void _puts_recursion(char *s);
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
