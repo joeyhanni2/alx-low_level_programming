@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_numbers - prints numbers 0-9 then next new line
@@ -12,7 +13,7 @@ int i = 0;
 
 while (numbers[i] != '\0')
 {
-_putchar(i + '0');
+_putchar(numbers[i]);
 i++;
 }
 }
