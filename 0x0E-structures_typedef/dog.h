@@ -2,17 +2,26 @@
 #define DOG_H
 
 /**
- * init_dog - defines a new type struct dog
+ * struct dog - defines a new type struct dog
  * @name: name of the dog
  * @age: age of the dog
  * @owner:owner of the dog
  * struct dog: dog infor
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+typedef struct dog
 {
-if(d == NULL)
-	d = malloc(sizeof(structdog));
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
-}
+
+	char->name = name;
+	float->age = age;
+	char->owner = owner;
+};
+/*
+ * function prototypes
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+typedef struct dog dog_t;
+
+#endif
