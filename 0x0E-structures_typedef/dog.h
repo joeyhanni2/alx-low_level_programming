@@ -2,11 +2,12 @@
 #define DOG_H
 
 /**
- * struct dog - defines a new type struct dog
+ * struct dog - dog basic infor
  * @name: name of the dog
  * @age: age of the dog
  * @owner:owner of the dog
- * struct dog: dog infor
+ *
+ * Description: dog data and dog struct
  */
 typedef struct dog
 {
