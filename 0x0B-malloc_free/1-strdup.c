@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * strdup - returns a pointer to a newly allocated space in memory
+ * _strdup - returns a pointer to a newly allocated space in memory
  * @str: string to copy
  * Return: NULL is str = NULL
  */
 
-char *_strdup(char *str)
+char *_strdup(char *str);
 {
 unsigned int len, p;
 char *str
@@ -28,3 +28,4 @@ for (p = 0; p < len; p++)
 s[p] = str[p];
 s[p] = '\0';
 return (s);
+}

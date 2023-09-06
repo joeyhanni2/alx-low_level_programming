@@ -1,4 +1,6 @@
 #include <stdlib.h>
+#include "main.h"
+#include <stdio.h>
 
 /**
  * create_array - create array of  chars
@@ -7,7 +9,7 @@
  * Return: pointer to array,Null if size is 0
  */
 
-char  *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 char *str;
 unsigned int i;
