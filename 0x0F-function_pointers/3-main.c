@@ -4,8 +4,8 @@
 
 /**
  * main - defines main function
- * argc: argument count
- * @argv:argument vector
+ * @argc: argument count
+ * @argv: argument vector
  * Return: 0 on success,else  98 or 99 without operator
  */
 

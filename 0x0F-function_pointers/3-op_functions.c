@@ -5,7 +5,7 @@
 /**
  * op_add - returns sum of two nums
  * @a: first num
- * b: second num
+ * @b: second num
  * Return: Result of the sum
  */
 int op_add(int a, int b)
