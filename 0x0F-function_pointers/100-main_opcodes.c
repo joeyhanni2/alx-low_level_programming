@@ -30,7 +30,7 @@ arr = (char *)main;
 for (int i = 0; i < bytes; i++)
 {
 if (i == num_bytes - 1)
-printf("%02x", (unsigned char)i);
+printf("%02x", arr[i]);
 }
 
 printf("\n");
