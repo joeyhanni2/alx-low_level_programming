@@ -21,19 +21,18 @@ return (1);
 
 int num_bytes = atoi(argv[1]);
 
-if (bytes < 0)
+if (num_bytes < 0)
 {
 printf("Error\n");
 return (2);
 }
 arr = (char *)main;
-for (int i = 0; i < bytes; i++)
+for (i = 0; i < bytes; i++)
 {
 if (i == num_bytes - 1)
-printf("%02x", arr[i]);
-}
-
-printf("\n");
+printf("%02hhx\n", arr[i]);
+};
+printf("%02hhx\ , arr[i]");
 
 return (0);
 }
