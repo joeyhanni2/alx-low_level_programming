@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct list {
-    int data;
-    struct list *next;
+typedef struct list
+{
+int data;
+struct list *next;
 } list_t;
+
 /**
  * free_list - frees a list_t list
  * @head: head of linked list
