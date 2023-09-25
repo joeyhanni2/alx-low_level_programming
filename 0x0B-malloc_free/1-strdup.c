@@ -26,10 +26,9 @@ n = malloc(sizeof(char) * (i + 1));
 if (n == NULL)
 free(n);
 return (NULL);
-
-for (r = 0; str[r]; r++)
+}
+for(r=0; r < i; r++)
 n[r] = str[r];
 n[r] = '\0';
 return (n);
-}
 }
