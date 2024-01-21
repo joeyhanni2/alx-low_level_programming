@@ -7,13 +7,15 @@
  * @c: char to assign to array
  * Return: pointer to array of chars
  */
-char *create_array(unsigned int size, char c);
+char *create_array(unsigned int size, char c)
 {
-	char a;
+	char *a;
 	unsigned int i;
+
 	if (size > 0)
+
 	{
-		a = malloc(size * sizeof(char))
+		a = malloc(size * sizeof(char));
 			if (a == NULL)
 			return (NULL);
 	}
