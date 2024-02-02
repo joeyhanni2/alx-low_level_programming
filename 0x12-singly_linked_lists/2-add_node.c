@@ -1,13 +1,6 @@
 #include <stdlib.h>
 #include "lists.h"
 
-typedef struct list_node
-{
-char *str;
-int len;
-struct list_node *next;
-}
-
 /**
  * add_node - adds new node at the beginning of a list_t list.
  * @head: original linked list
@@ -26,8 +19,8 @@ while (str[length])
 	length++;
 }
 add_node->len = length;
-add_node->str = character(str);
 add_node->next = *head;
+*head = add_node;
 
 return (add_node);
 }
