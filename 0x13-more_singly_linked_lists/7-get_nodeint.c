@@ -6,7 +6,8 @@
  * get_nodeint_at_index - returns the nth node of a listint_t
  * @head: list head
  * @index:  index of the node, starting at 0
- * return: pointer to nth node ,else NULL
+ * return: pointer to nth node if successful or
+ * NULL if node does not exist.
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
